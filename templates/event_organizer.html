@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Organizer List</title>
+</head>
+<body>
+    <h1>Event Organizer List</h1>
+    <ul>
+        {% for event in events %}
+            <li>
+                <strong>Event Name:</strong> {{ event.event_name }}<br>
+                <strong>Start Date and Time:</strong> {{ event.event_start_datetime }}<br>
+                <strong>Closing Date and Time:</strong> {{ event.event_closing_datetime }}<br>
+                <strong>Gate Opening Time:</strong> {{ event.gate_opening_time }}<br>
+                <strong>Location:</strong> {{ event.event_location }}<br>
+                <strong>Organizer Name:</strong> {{ event.event_organizer_name }}<br>
+                <strong>Banner Image:</strong> <img src="{{ event.event_banner_image.url }}" alt="Banner Image"><br>
+                <strong>Google Map URL:</strong> <a href="{{ event.location_google_map_url }}" target="_blank">{{ event.location_google_map_url }}</a><br>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
