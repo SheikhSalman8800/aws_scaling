@@ -1,0 +1,7 @@
+asgiref @ file:///home/conda/feedstock_root/build_artifacts/asgiref_1711268871457/work
+Django @ file:///home/conda/feedstock_root/build_artifacts/django_1711546660077/work
+path @ file:///Users/runner/miniforge3/conda-bld/path_1713222446808/work
+pillow==10.3.0
+psycopg2-binary==2.9.9
+sqlparse @ file:///home/conda/feedstock_root/build_artifacts/sqlparse_1681817562700/work
+typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1712329955671/work
